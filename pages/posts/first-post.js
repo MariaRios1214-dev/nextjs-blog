@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import Script from 'next/script';
 import Layout from "../../components/layout";
-import AlertComponent from "../../components/Alert/Alert";
+import Alert from "../../components/alert/alert";
 
 export async function getServerSideProps() {
   // Fetch data from external API
@@ -36,7 +36,7 @@ export default function FirstPost({data}) {
       <h2>
         <Link href={"/"}>Back to home</Link>
       </h2>
-      <AlertComponent children='Mafe'type="success"/>
-      <AlertComponent children='Failed process'type="error"/>
+      <Alert children='Mafe'type="success"/>
+      <Alert children='Failed process'type="error"/>
     </Layout>);
 }
