@@ -7,18 +7,18 @@ import Alert from "../../components/alert/alert";
 export async function getServerSideProps() {
   // Fetch data from external API
 
-  const res = await fetch(`https://api.mercadolibre.com/sites/MLA/search?category=MLA1055`)
-  // res.setHeader(
-  //   'Cache-Control',
-  //   'public, s-maxage=10, stale-while-revalidate=59'
-  // )
-  const data = await res.json()
+  // const res = await fetch(`https://api.mercadolibre.com/sites/MLA/search?category=MLA1055`)
+  // // res.setHeader(
+  // //   'Cache-Control',
+  // //   'public, s-maxage=10, stale-while-revalidate=59'
+  // // )
+  // const data = await res.json()
+  const data =  []
 
   // Pass data to the page via props
   return { props: { data } }
 }
 export default function FirstPost({data}) {
-  console.log('dataMeli', data)
   return (
     <Layout>
       <Head>
