@@ -1,7 +1,7 @@
 import styles from './alertComponent.module.scss';
 import { clsx } from 'clsx';
 
-export default function AlertComponent({ children, type }) {
+export default function Alert({ children, type }) {
   return (
     <div
       className={clsx({
