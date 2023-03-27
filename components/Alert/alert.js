@@ -1,4 +1,4 @@
-import styles from './alertComponent.module.scss';
+import styles from './alert.module.scss';
 import { clsx } from 'clsx';
 
 export default function Alert({ children, type }) {
